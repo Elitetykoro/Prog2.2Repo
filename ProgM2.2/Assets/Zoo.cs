@@ -6,12 +6,9 @@ using UnityEngine.Scripting.APIUpdating;
 
 public class Zoo : MonoBehaviour
 {
-    public List<Animal> animals = new List<Animal>();
+    public List<Animal> animals = new List<Animal>() { new Dog(), new Bird(), new Elephant() };
 void Start() 
     {
-        animals.Add(new Dog());
-        animals.Add(new Elephant());
-        animals.Add(new Bird());
         foreach (Animal a in animals)
         {
             a.Move();
