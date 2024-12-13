@@ -1,4 +1,6 @@
+```mermaid
 classDiagram
+
 class Unit {
     + speed: float
     + health: float
@@ -16,3 +18,4 @@ class Brute {
 
 Unit <|-- Elf
 Unit <|-- Brute
+```
