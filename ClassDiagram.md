@@ -1,23 +1,12 @@
-```mermaid
+%% Prog Opdracht 13
 
-//titel is optioneel
----
-Title: Prog Opdracht 13
----
-
-//geef aan dat je een class diagram wil maken
 classDiagram
 
-//definieer je classes en bijhorende attributen en operaties
-class Brute{
-    + Health     //Private
+class Brute {
+    - Health
 }
 
+class Unit
 
-//geef alle relaties aan
-//Overerving Relatie
+%% Overervingsrelatie
 Brute --|> Unit
-
-//Dependancy relatie
-Unit ..> Brute
-```
