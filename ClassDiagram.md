@@ -1,12 +1,9 @@
-%% Prog Opdracht 13
-
 classDiagram
+
+class Unit
 
 class Brute {
     - Health
 }
 
-class Unit
-
-%% Overervingsrelatie
 Brute --|> Unit
