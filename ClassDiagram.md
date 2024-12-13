@@ -1,9 +1,18 @@
 classDiagram
-
-class Unit
-
-class Brute {
-    - Health
+class Unit {
+    + speed: float
+    + health: float
+    + TakeDamage(): void
 }
 
-Brute --|> Unit
+class Elf {
+    - Health: Int
+    - ToggleVisibility(): void
+}
+
+class Brute {
+    - Health: int
+}
+
+Unit <|-- Elf
+Unit <|-- Brute
